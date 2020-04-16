@@ -39,14 +39,14 @@ app.get('/users/search', function(req, res){
 	});
 });
 
-app.get('users/create', function(req, res){
-	res.render('users/create.pug')
+app.get('/users/create', function(req, res){
+	res.render('users/create')
 });
 
-// app.post('users/create', function(req, res){
-// 	user.push(req.body);
-// 	res.redirect('/users')
-// });
+app.post('/users/create', function(req, res){
+	users.push(req.body);
+	res.redirect('/users')
+});
 
 app.listen(port, function(){
 	console.log('Server listening on port ' + port)
