@@ -12,7 +12,8 @@ app.set('views', './views');
 
 var users = [
 			{ id: 1, name: 'Nhan' },
-			{ id: 2, name: 'Lien'}
+			{ id: 2, name: 'Lien'},
+			{ id: 3, name: 'Duc'}
 		];
 
 app.get('/', function(request, response){
